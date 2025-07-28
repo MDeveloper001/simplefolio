@@ -1,26 +1,29 @@
 {
   "name": "simplefolio",
-  "version": "1.0.1",
-  "private": "true",
+  "version": "1.0.0",
+  "private": true,
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
+  "homepage": "https://mdeveloper001.github.io/simplefolio",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --public-url /simplefolio/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "https://github.com/mdeveloper001/simplefolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "M.developer01",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/mdeveloper001/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.8.2",
     "prettier": "^2.8.1"
   },
